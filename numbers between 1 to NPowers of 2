@@ -1,0 +1,15 @@
+import java.util.*;
+
+public class Main {
+    static boolean isPowerOf2(int n) {
+        return (n & (n - 1)) == 0;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+
+        for (int i = 1; i <= N; i++)
+            if (isPowerOf2(i)) System.out.print(i + " ");
+    }
+}
