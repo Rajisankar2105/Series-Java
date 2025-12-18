@@ -1,0 +1,16 @@
+import java.util.*;
+
+public class Main{
+    static boolean isPerfectCube(int n) {
+        int r = (int)Math.cbrt(n);
+        return r * r * r == n;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+
+        for (int i = 1; i <= N; i++)
+            if (isPerfectCube(i)) System.out.print(i + " ");
+    }
+}
